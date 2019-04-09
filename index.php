@@ -129,7 +129,7 @@
 						</a><!-- /.quick-links -->
 						<a href="./" class="quick-link">
 							<div class="quick-link-icon" style="background:url('./_assets_/images/ql4.png') center no-repeat;background-size:cover;"></div>
-							<h3>career opportnities</h3>
+							<h3>career opportunities</h3>
 						</a><!-- /.quick-links -->
 						<a href="./" class="quick-link">
 							<div class="quick-link-icon" style="background:url('./_assets_/images/ql5.png') center no-repeat;background-size:cover;"></div>
