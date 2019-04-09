@@ -149,9 +149,9 @@
 						<span>february 3, 2019</span>
 						<h3>sem tellus elit consectetur adipiscing</h3>
 						<p>
-							Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque
+							Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque...
 						</p>
-						<a href="./">read more &rarr;</a>
+						<a href="./">read more</a>
 					</div><!-- /.news-link-info -->
 				</div><!-- /.news-link -->
 				<div class="news-link">
@@ -162,7 +162,7 @@
 						<p>
 							Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet...
 						</p>
-						<a href="./">read more &rarr;</a>
+						<a href="./">read more</a>
 					</div><!-- /.news-link-info -->
 				</div><!-- /.news-link -->
 				<div class="news-link">
@@ -173,7 +173,7 @@
 						<p>
 							Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur...
 						</p>
-						<a href="./">read more &rarr;</a>
+						<a href="./">read more</a>
 					</div><!-- /.news-link-info -->
 				</div><!-- /.news-link -->
 			</div><!-- /#news-links -->

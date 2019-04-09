@@ -112,21 +112,21 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-.btn{padding:10px 20px;background:#0f99ee;color:#fff!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:700!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:'Montserrat',sans-serif;text-transform:uppercase;transition:background .3s}
+.btn{padding:10px 20px;background:#08685c;color:#fff!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:700!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:'Montserrat',sans-serif;text-transform:uppercase;transition:background .3s}
 .button:hover,
 a.button:hover,
 button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
-.btn:hover{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#0e8cda}
+.btn:hover{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#08685c}
 .button:active,
 a.button:active,
 button:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active,
-.btn:active{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#0e8cda}
+.btn:active{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#08685c}
 button::-moz-focus-inner,
 input::-moz-focus-inner{border:0;padding:0}
 
@@ -254,6 +254,10 @@ nav:after {content: ''; position: absolute; top: 29px; bottom: 25px; right: 3px;
 #search label {display: none;}
 #search button {position: absolute; top: 0; right: 0;}
 
+/*--------------- #content ---------------*/
+#content h2 {font-family: 'GoudyOld'; font-size: 48px; line-height: 68px; color: #08685c; text-transform: capitalize;}
+#content a.btn {width: 230px; height: 50px; font-size: 14px; line-height: 50px; letter-spacing: 0.1em; background-color: #08685c; padding: 0; border-radius: 8px;}
+
 /*--------------- #welcome ---------------*/
 #welcome {position: relative; padding: 255px 0; background-color: #f0edd9;}
 #welcome:before {content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 25%; background-image: linear-gradient(#f0edd9, transparent);}
@@ -270,6 +274,24 @@ nav:after {content: ''; position: absolute; top: 29px; bottom: 25px; right: 3px;
 .quick-link {text-decoration: none; text-align: center;}
 .quick-link-icon {margin: 0 auto; width: 64px; height: 64px;}
 .quick-link h3 {font-size: 18px; line-height: 26px; font-weight: 600; color: #000; text-transform: uppercase; padding: 9px 55px;}
+
+/*--------------- #news ---------------*/
+#news {text-align: center; padding-top: 47px;}
+#news h2 {margin-bottom: 34px;}
+#news-links {position: relative;}
+#news-links:after {content: ''; position: absolute; top: 0; bottom: 60px; left: 0; right: 0; pointer-events: none; background-image: linear-gradient(to right, #fff, transparent, #fff); opacity: 0.5;}
+#news-links .owl-height {height: 670px!important;}
+.news-link {text-align: left; background-color: #fff; border-radius: 8px;}
+.owl-item.center .news-link {box-shadow: 0px 5px 19.95px 1.05px rgba(0, 0, 0, 0.1); transform: scaleX(1.01);}
+.news-link-info {padding: 43px 45px 79px;border-radius: 0 0 8px 8px;}
+.news-link-img {width: 100%; height: 300px;border-radius: 8px 8px 0 0;}
+.news-link span {font-size: 12px; font-weight: 700; color: #08685c; text-transform: uppercase;}
+.news-link h3 {font-family: 'GouldyOld'; font-size: 28px; line-height: 38px; font-weight: 700; color: #000; text-transform: capitalize; margin: 9px 0;}
+.news-link p {font-size: 14px; line-height: 24px; color: #000; margin: 0;}
+.news-link a {font-size: 12px; line-height: 48px; font-weight: 700; color: #83aa92; text-transform: uppercase; text-decoration: none; float: right; margin-right: 4px;}
+.news-link a:after {content: '\f061'; font-family: 'FontAwesome'; margin-left: 8px;}
+
+
 
 /* -----------------------------------------
 

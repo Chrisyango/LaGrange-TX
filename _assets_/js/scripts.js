@@ -321,17 +321,35 @@
 				}
 			}
 		});
+
+		let newsLinkCount = $('.news-link').length;
+		const newsLinkItem = function(num) {
+			return (newsLinkCount >= num ? num : newsLinkCount);
+		}
+		$("#news-links").owlCarousel({
+			loop: newsLinkCount > 1 ? true : false,
+			responsiveClass: true,
+			nav: true,
+			autoHeight: true,
+			navText: ['<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>'],
+			margin: 103,
+			center: true,
+			startPosition: 1,
+			responsive: {
+				0: {
+					items: newsLinkItem(1),
+				},
+				600: {
+					items: newsLinkItem(2),
+				},
+				1000: {
+					items: newsLinkItem(3),
+					loop: false,
+					nav: false
+				}
+			}
+		});
 	}
-
-	// Preloader
-	$window.load(function() {
-
-		setTimeout(function(){
-			$body.addClass('loaded');
-			 $('#loader-wrapper').fadeOut();
-		}, 600);
-
-	});
 
 	$window.ready(function(){
 
