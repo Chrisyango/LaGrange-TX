@@ -290,12 +290,12 @@
 
 	// Owl Slider
 	if(typeof $.fn.owlCarousel !== "undefined"){
-		let departmentsLinkCount = $('.departments-link').length;
-		const departmentsItem = function(num) {
-			return (departmentsLinkCount >= num ? num : departmentsLinkCount);
+		let quickLinkCount = $('.quick-link').length;
+		const quickLinkItem = function(num) {
+			return (quickLinkCount >= num ? num : quickLinkCount);
 		}
-		$("#departments-links").owlCarousel({
-			loop: departmentsLinkCount > 1 ? true : false,
+		$("#quick-links-wrapper").owlCarousel({
+			loop: quickLinkCount > 1 ? true : false,
 			responsiveClass: true,
 			nav: true,
 			autoHeight: true,
@@ -303,19 +303,19 @@
 			margin: 0,
 			responsive: {
 				0: {
-					items: departmentsItem(2),
+					items: quickLinkItem(1),
 				},
 				500: {
-					items: departmentsItem(3),
+					items: quickLinkItem(2),
 				},
 				800: {
-					items: departmentsItem(5),
+					items: quickLinkItem(3),
 				},
 				1100: {
-					items: departmentsItem(7),
+					items: quickLinkItem(4),
 				},
 				1400: {
-					items: departmentsItem(9),
+					items: quickLinkItem(5),
 					loop: false,
 					nav: false
 				}

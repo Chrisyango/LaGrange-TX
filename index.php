@@ -76,7 +76,7 @@
 						<li><a href="./">vehicula venenatis mattis</a></li>
 					</ul>
 				</li>
-				<li><a href="./">goverment</a></li>
+				<li><a href="./">government</a></li>
 				<li><a href="./">residents</a></li>
 				<li><a href="./">business</a></li>
 				<li><a href="./">visitor information</a></li>
@@ -101,19 +101,20 @@
 <main id="main">
 	<section id="content">
 		<section id="welcome">
-			<div id="welcome-info" class="clearfix">
+			<div id="welcome-info" class="container">
 				<h1><span>welcome to</span>la grange</h1>
+				<div id="welcome-img" style="background:url('./_assets_/images/welcome.png') center no-repeat;background-size:cover;"></div>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
 				</p>
-			</div><!-- /#welcome-info -->
-			<div id="welcome-bg" style="background:url('./_assets_/images/welcome-bg.jpg') center no-repeat;background-size:cover;"></div>
+			</div><!-- /#welcome-info.container -->
+			<div id="welcome-bg" style="background:url('./_assets_/images/welcome-bg.png') center no-repeat;background-size:cover;"></div>
 		</section><!-- /#welcome -->
 
 		<section id="quick-links">
 			<div id="quick-links-container-wrapper">
 				<div class="container">
-					<div id="quick-links-wrapper">
+					<div id="quick-links-wrapper" class="owl-carousel">
 						<a href="./" class="quick-link">
 							<div class="quick-link-icon" style="background:url('./_assets_/images/ql1.png') center no-repeat;background-size:cover;"></div>
 							<h3>pay utility bill</h3>
