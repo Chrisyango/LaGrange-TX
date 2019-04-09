@@ -1,9 +1,10 @@
 /*-----------------------------------------------------------------------------------
 
-	Theme Name: SiteName
+	Theme Name: LaGrange, TX
+	Front-end Developer: Chris Yang
 	Author Design: Samir Alley @samiralley | Tom Gooden @good3n
 	Author URI: http://www.revize.com/
-	Date: MONTH DAY, 2015
+	Date: April 9, 2019
 
 -----------------------------------------------------------------------------------*/
 
@@ -84,7 +85,7 @@
 	});
 
 	// Menu Arrows
-	$("#nav > li:has(ul)").addClass('first-parent').children("a,span").append('<i class="fa fa-angle-down down-arrow">');
+	// $("#nav > li:has(ul)").addClass('first-parent').children("a,span").append('<i class="fa fa-angle-down down-arrow">');
 
 	// Menu Toggles
 	$("#nav >li>ul,#flyout >li>ul").addClass('first-level');
@@ -198,14 +199,14 @@
 	// revizeWeather
 	if( typeof $.fn.revizeWeather !== "undefined" ){
 		$.fn.revizeWeather({
-			zip: '48326',
+			zip: '78945',
 			city_name: '',
 			unit: 'f',
 			success: function(weather) {
 				var date = new Date();
 				date = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
-				var html = '<span>'+date+'</span> <span class="forecast">'+weather.temp+'&deg; '+weather.forecast+'</span>';
-				html += '<i class="'+weather.icon+'"></i>';
+				var html = '<i class="'+weather.icon+'"></i>';
+				html += '<span class="forecast">'+weather.temp+'&deg; </span>';
 
 				$("#weather").html(html);
 			},

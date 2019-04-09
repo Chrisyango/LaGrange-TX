@@ -1,18 +1,23 @@
 /*-----------------------------------------------------------------------------------
 
-	Theme Name: SiteName
+	Theme Name: LaGrange, TX
+	Front-end Developer: Chris Yang
 	Author Design: Samir Alley @samiralley | Tom Gooden @good3n
 	Author URI: http://www.revize.com/
-	Date: MONTH DAY, 2015
+	Date: April 9, 2019
 
 -----------------------------------------------------------------------------------*/
 
 /* -----------------------------------------
-
 #basic styles
 
 -----------------------------------------*/
-body{background:#fff;font-size:14px;line-height:1.6;font-family:sans-serif;color:#444;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}
+@font-face {
+	font-family: 'GoudyOld';
+	src: 
+		url('../fonts/goudy\ old/GoudyOldStyleExtraBold.otf') format('otf');
+}
+body{background:#fff;font-size:14px;line-height:1.6;font-family:'Montserrat',sans-serif;color:#444;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}
 
 /* -----------------------------------------
 
@@ -107,7 +112,7 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-.btn{padding:10px 20px;background:#0f99ee;color:#fff!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:900!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:sans-serif;text-transform:uppercase;transition:background .3s}
+.btn{padding:10px 20px;background:#0f99ee;color:#fff!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:700!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:'Montserrat',sans-serif;text-transform:uppercase;transition:background .3s}
 .button:hover,
 a.button:hover,
 button:hover,
@@ -137,7 +142,7 @@ input[type="password"],
 input[type="email"],
 input[type="search"],
 textarea,
-select{border:1px solid #e9eaec;padding:10px 14px;outline:none;font-size:13px;font-family:sans-serif;color:#777;margin:0;display:inline-block;background:#fff;border-radius:0;box-shadow:none}
+select{border:1px solid #e9eaec;padding:10px 14px;outline:none;font-size:13px;font-family:'Montserrat',sans-serif;color:#777;margin:0;display:inline-block;background:#fff;border-radius:0;box-shadow:none}
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -181,7 +186,7 @@ form.loginform label input{display:block;margin-bottom:10px;width:100%;box-sizin
 
 -----------------------------------------*/
 .floating-alert{position:fixed;z-index:99999;bottom:10px;margin:0;right:10px;border:3px solid #fff;background:#000;background:rgba(0,0,0,.9);box-shadow:0 0 10px rgba(0,0,0,.2);color:#fff;padding:30px;font-size:14px;width:350px;}
-.floating-alert h4{color:#ffc140;margin:0 0 10px;font-family:sans-serif;font-weight:bold;text-transform:uppercase;font-size:18px}
+.floating-alert h4{color:#ffc140;margin:0 0 10px;font-family:'Montserrat',sans-serif;font-weight:700;text-transform:uppercase;font-size:18px}
 .floating-alert .btn{padding:8px 10px;margin:20px 0 0 0!important}
 .floating-alert .close{padding:0;background:none!important;color:#fff!important;opacity:1;margin-right:20px}
 
@@ -227,17 +232,25 @@ body{overflow-x:hidden}
 .toggle,
 .toggle2{display:none}
 
-#nav>li>ul {
-    -moz-column-count: 4;
-    -moz-column-gap: 40px;
-    -webkit-column-count: 4;
-    -webkit-column-gap: 40px;
-    column-count: 4;
-    column-gap: 40px;
-    padding:40px
-}
-#nav>li>ul li{display:inline-block;width:100%}
-#nav>li>ul li a{display:block}
+header .container {position: relative; width: 1470px; text-align: right;}
+#logo {display: block; float: left; width: 222px; margin-top: 3px;}
+nav,
+#nav {position: relative; display: inline-block; margin: 0 33px 0 0; padding: 0;}
+nav:after {content: ''; position: absolute; top: 29px; bottom: 26px; right: 0; width: 2px; background: black;}
+#nav li {display: inline-block; margin: 0;}
+#nav li a {display: block; font-size: 14px; line-height: 68px; font-weight: 600; color: #000; text-transform: uppercase; text-decoration: none; padding: 1px 9px 0;}
+#nav ul {display: none;}
+
+.weather,
+#weather {display: inline-block;margin-right: 6px;}
+.forecast {font-size: 11px; line-height: 68px; font-weight: 600; color: #08685c;}
+.weather i {font-size: 20px; margin-right: 5px;}
+
+#search-toggle {font-family: 'MontSerrat';font-size: 11px; line-height: 68px; font-weight: 700; color: #08685c; text-transform: uppercase;}
+#search-toggle:before {font-family: 'FontAwesome'; margin-right: 3px;}
+#search {position: absolute; top:100%; right: 0;}
+#search label {display: none;}
+#search button {position: absolute; top: 0; right: 0;}
 
 
 /* -----------------------------------------
