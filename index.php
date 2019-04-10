@@ -200,23 +200,26 @@
 				<a href="./" class="fa fa-instagram"></a>
 				<a href="./" class="fa fa-youtube"></a>
 			</div><!-- /.social-links -->
-			SOCIAL FEED AND STUFF HERE
+			<div id="social-feed" class="owl-carousel">
+			</div>
+			<!-- <div id="instafeed"></div> -->
+			<!-- <div id="twitterfeed"></div> -->
 		</section><!-- /#social -->
 	</section><!-- /#content -->
 </main>
 
 <footer>
-	<section id="revize-logo">
-		<div class="container">
+	<div class="container">
+		<section id="revize-logo">
 			<span>&copy; Copyright City of La Grange, TX</span>
 			<span>Powered by <a href="https://www.revize.com/">revize</a>, The Government Website Experts. <a href="./">login</a></span>
-		</div><!-- /.container -->
-	</section><!-- /#revize-logo -->
+		</section><!-- /#revize-logo -->
 
-	<section id="contact">
-		<span>155 E. Colorado St. La Grange, TX 78945</span>
-		<span>979.968.5805</span>
-	</section>
+		<section id="contact">
+			<span>155 E. Colorado St. La Grange, TX 78945</span>
+			<span>979.968.5805</span>
+		</section>
+	</div><!-- /.container -->
 </footer>
 
 <div class="alert alert-dismissible floating-alert fade in os-animation" data-os-animation="fadeInUpBig" data-os-animation-delay="2s" role="alert">
@@ -283,6 +286,11 @@
 
 
 <script src="_assets_/js/jquery.min.js"></script>
+<script src="_assets_/plugins/social-feed/bower_components/codebird-js/codebird.js"></script>
+<script src="_assets_/plugins/social-feed/bower_components/doT/doT.min.js"></script>
+<script src="_assets_/plugins/social-feed/bower_components/moment/min/moment.min.js"></script>
+<script src="_assets_/plugins/social-feed/bower_components/moment/locale/en-au.js"></script>
+<script src="_assets_/plugins/social-feed/js/jquery.socialfeed.js"></script>
 <script src="_assets_/plugins/modernizr/modernizr.custom.js"></script>
 <script src="_assets_/plugins/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
 <script src="_assets_/plugins/jquery.bxslider/jquery.bxslider.min.js"></script>

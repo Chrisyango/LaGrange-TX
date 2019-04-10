@@ -243,33 +243,38 @@
 	})
 
 	// Twitter Feed
-	if(typeof $.fn.tweet !== "undefined"){
-		$("#twitterfeed").tweet({
-			modpath: '_assets_/plugins/twitter/',
-			username: "RevizeSoftware",
-			join_text: "auto",
-			avatar_size: 0,
-			count: 1,
-			auto_join_text_default: "",
-			auto_join_text_ed: "",
-			auto_join_text_ing: "",
-			auto_join_text_reply: "",
-			auto_join_text_url: "",
-			loading_text: "Loading Tweet..."
-		});
-	}
+	// if(typeof $.fn.tweet !== "undefined"){
+	// 	$("#twitterfeed").tweet({
+	// 		modpath: '_assets_/plugins/twitter/',
+	// 		username: "RevizeSoftware",
+	// 		join_text: "auto",
+	// 		avatar_size: 50,
+	// 		count: 3,
+	// 		auto_join_text_default: "",
+	// 		auto_join_text_ed: "",
+	// 		auto_join_text_ing: "",
+	// 		auto_join_text_reply: "",
+	// 		auto_join_text_url: "",
+	// 		loading_text: "Loading Tweet..."
+	// 	});
+	// }
 
 	// Instafeed Feed
-	if(typeof(window.Instafeed) === "function"){
-		var userFeed = new Instafeed({
-			get: 'user',
-			resolution:'standard_resolution',
-			limit:9,
-			userId: 223202806,
-			accessToken: '303202123.f7e9b72.27c687fbd9c24ecbb29dc92951cdf724'
-		});
-		userFeed.run();
-	}
+	// if(typeof(window.Instafeed) === "function"){
+	// 	var instaFeed = new Instafeed({
+	// 		get: 'user',
+	// 		userId: 8987997106,
+	// 		clientId: '924f677fa3854436947ab4372ffa688d',
+	// 		accessToken: '8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9',
+	// 		resolution: 'standard_resolution',
+	// 		template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /><span>{{caption}}</span></a>',
+	// 		sortBy: 'most-recent',
+	// 		limit: 3,
+	// 		links: false,
+	// 		target: 'instafeed'
+	// 	});
+	// 	instaFeed.run();
+	// }
 
 	// Sticky
 	if(typeof $.fn.sticky !== "undefined"){
@@ -353,39 +358,35 @@
 
 	$window.ready(function(){
 
-		if ( typeof $.fn.sociafeed !== "undefined"){
-			$('.social-feed-container').socialfeed({
+		// Social Feed
+		if ( typeof $.fn.socialfeed !== "undefined"){
+			$('#social-feed').socialfeed({
 				// Facebook
 				facebook:{
-					accounts: ['@facebook'],
-					limit: 2,
-					access_token: 'YOUR_FACEBOOK_ACCESS_TOKEN'
-				},
-
-				// Twitter
-				twitter:{
-					accounts: ['@spacex'],
-					limit: 2,
-					consumer_key: 'YOUR_CONSUMER_KEY',
-					consumer_secret: 'YOUR_CONSUMER_SECRET_KEY',
-					tweet_mode: 'compatibility'
-				},
-
-				// Instagram
-				instagram:{
-					accounts: ['&facebook'],
-					limit: 2,
-					access_token: 'YOUR_INSTAGRAM_ACCESS_TOKEN'
+					accounts: ['@spanishforklibrary'],
+					limit: 6,
+					access_token: 'EAAMkcCLFBs8BAEnpzLa3fg98gku0FhSwmvKZAujQ5m6RLRlHnIUnPaAexISWwIMA4VEoHuFUEWufVXIsasnQFRaDys2613NJUqt5sE5FqAr1sYrgnLZBPgeDmP8cZAkv7sFZBQOxUdrz2B7udHItF8tNMWiZC5iJfqkmWWK06BQZDZD'
 				},
 
 				// General settings
 				length:45,
 				show_media:true,
 				media_min_width: 300,
-				update_period: 5000,
 				template: "_assets_/templates/template.html",
 				callback: function() {
-					console.log("All posts collected!");
+					let socialCount = $('.social-feed-element').length;
+					const socialItem = function(num) {
+						return (socialCount >= num ? num : socialCount);
+					}
+					$("#social-feed").owlCarousel({
+						loop: socialCount > 1 ? true : false,
+						nav: true,
+						autoHeight: true,
+						autoWidth: true,
+						navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
+						margin: 30,
+						loop: false,
+					});
 				}
 			});
 		}

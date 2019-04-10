@@ -301,6 +301,23 @@ nav:after {content: ''; position: absolute; top: 29px; bottom: 25px; right: 3px;
 #events-info {float: right; margin-right: 1px;}
 #events a.btn {margin-top: 45px; width: 244px;}
 
+/*--------------- #social ---------------*/
+#social {text-align: center; margin: 160px 0 124px;}
+#social h2 {margin-bottom: 8px;}
+.social-links a {text-decoration: none; font-size: 18px; margin: 0 8px; color: #08685c;}
+
+#social-feed {position: relative; text-align: left; margin-top: 47px; padding: 0 0 0 30px;}
+#social-feed:after {content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; pointer-events: none; background-image: linear-gradient(to right,transparent 90%,#fff);}
+.social-feed-element {position: relative; display: inline-block; background-color: #fff; border-radius: 8px; overflow: hidden; width: 570px;}
+.social-img-container {float: left; width: 180px; height: 180px; overflow: hidden; border-radius: 8px 0 0 8px;}
+.media-body {padding: 22px 32px;}
+.media-body i {position: absolute; bottom: -43px; right: 10px; font-size: 200px; color: #08685c; opacity: 0.07;}
+.time-posted {font-size: 12px; line-height: 42px; font-weight: 700; color: #bed3c6; text-transform: uppercase;}
+.social-feed-text {font-family: 'GoudyOld'; font-size: 18px; line-height: 28px; font-weight: 700; color: #000; margin: 1px 0;}
+#social-feed .owl-prev,
+#social-feed .owl-next {position: absolute; top: 50%; left: 20px; transform: translateY(-56%); font-size: 36px; z-index: 1;}
+#social-feed .owl-next {left: unset; right: 20px;}
+
 /* -----------------------------------------
 
 #inner
