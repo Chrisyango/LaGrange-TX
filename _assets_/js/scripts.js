@@ -293,17 +293,20 @@
 			responsiveClass: true,
 			nav: true,
 			autoHeight: true,
-			navText: ['<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>'],
+			navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
 			margin: 0,
 			responsive: {
 				0: {
 					items: quickLinkItem(1),
+					margin: 15
 				},
 				500: {
 					items: quickLinkItem(2),
+					margin: 15
 				},
 				800: {
 					items: quickLinkItem(3),
+					margin: 15
 				},
 				1100: {
 					items: quickLinkItem(4),
@@ -325,10 +328,16 @@
 			responsiveClass: true,
 			nav: true,
 			autoHeight: true,
-			navText: ['<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>'],
+			navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
 			margin: 103,
 			center: true,
 			startPosition: 1,
+			onInitialized: function() {
+				$('#news-links > .owl-height').height($('#news-links > .owl-height').outerHeight() + 60);
+				$('#news-links').find('.news-link').each(function () {
+					$(this).css('margin-bottom', '60px');
+				});
+			},
 			responsive: {
 				0: {
 					items: newsLinkItem(1),
@@ -343,6 +352,8 @@
 				}
 			}
 		});
+
+		
 	}
 
 	$window.ready(function(){

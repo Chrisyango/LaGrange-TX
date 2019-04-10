@@ -273,6 +273,9 @@ nav,
 /*--------------- #quick-links ---------------*/
 #quick-links {margin-top: 75px;}
 #quick-links .container {width: 1330px;}
+#quick-links .owl-prev,
+#quick-links .owl-next {position: absolute; top: 50%; left: 0; transform: translateY(-100%); font-size: 30px;}
+#quick-links .owl-next {left: unset; right: 0;}
 .quick-link {text-decoration: none; text-align: center;}
 .quick-link-icon {margin: 0 auto; width: 64px; height: 64px;}
 .quick-link h3 {font-size: 18px; line-height: 26px; font-weight: 600; color: #000; text-transform: uppercase; padding: 9px 55px;}
@@ -283,7 +286,6 @@ nav,
 #news a.btn {z-index: 1;}
 #news-links {position: relative;}
 #news-links:after {content: ''; position: absolute; top: 0; bottom: 60px; left: 0; right: 0; pointer-events: none; background-image: linear-gradient(to right,#fff,transparent,#fff); opacity: 0.5;}
-#news-links .owl-height {height: 670px!important;}
 .news-link {text-align: left; background-color: #fff; border-radius: 8px;}
 .owl-item.center .news-link {box-shadow: 0px 5px 19.95px 1.05px rgba(0, 0, 0, 0.1); transform: scaleX(1.01);}
 .news-link-info {padding: 43px 45px 79px;border-radius: 0 0 8px 8px;}
@@ -521,6 +523,11 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	#welcome-bg-cover {display: none;}
 	#welcome p {width: 100%;}
 
+	/*--------------- #quick-links ---------------*/
+	#quick-links {margin-top: 50px;}
+	.quick-link-icon {width: 55px; height: 55px;}
+	.quick-link h3 {font-size: 16px;}
+
 }
 
 	/* All Mobile Sizes (devices and browser) */
@@ -537,6 +544,9 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	#welcome h1 {font-size: 60px; line-height: 70px;}
 	#welcome h1 span {font-size: 20px; line-height: 38px;}
 	#welcome-bg {height: 300px;}
+
+	/*--------------- #quick-links ---------------*/
+	.quick-link h3 {padding: 9px 0;}
 
 }
 
