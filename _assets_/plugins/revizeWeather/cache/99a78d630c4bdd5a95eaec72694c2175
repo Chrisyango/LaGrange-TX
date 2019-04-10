@@ -1,2 +1,2 @@
-1554840594
-{"coord":{"lon":-96.88,"lat":29.91},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"base":"stations","main":{"temp":87.51,"pressure":1012,"humidity":29,"temp_min":84.2,"temp_max":91.99},"visibility":16093,"wind":{"speed":5.82,"deg":200},"clouds":{"all":1},"dt":1554840574,"sys":{"type":1,"id":2910,"message":0.006,"country":"US","sunrise":1554811649,"sunset":1554857420},"id":420034342,"name":"Austin","cod":200}
+1554903524
+{"coord":{"lon":-96.88,"lat":29.91},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"base":"stations","main":{"temp":64.83,"pressure":1007,"humidity":100,"temp_min":62.01,"temp_max":68},"visibility":16093,"wind":{"speed":5.82,"deg":180},"clouds":{"all":1},"dt":1554903201,"sys":{"type":1,"id":2910,"message":0.0045,"country":"US","sunrise":1554897980,"sunset":1554943856},"id":420034342,"name":"Austin","cod":200}

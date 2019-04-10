@@ -256,11 +256,11 @@ nav:after {content: ''; position: absolute; top: 29px; bottom: 25px; right: 3px;
 
 /*--------------- #content ---------------*/
 #content h2 {font-family: 'GoudyOld'; font-size: 48px; line-height: 68px; color: #08685c; text-transform: capitalize;}
-#content a.btn {width: 230px; height: 50px; font-size: 14px; line-height: 50px; letter-spacing: 0.1em; background-color: #08685c; padding: 0; border-radius: 8px;}
+#content a.btn {position: relative; width: 230px; height: 50px; font-size: 14px; line-height: 50px; letter-spacing: 0.1em; background-color: #08685c; padding: 0; border-radius: 8px;}
 
 /*--------------- #welcome ---------------*/
 #welcome {position: relative; padding: 255px 0; background-color: #f0edd9;}
-#welcome:before {content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 25%; background-image: linear-gradient(#f0edd9, transparent);}
+#welcome:before {content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 25%; background-image: linear-gradient(#f0edd9,transparent);}
 #welcome .container {width: 1470px;}
 #welcome-bg {position: absolute; top: 0; right: 0; width: 871px; height: 800px;}
 #welcome h1 {display: inline-block; font-family: 'GoudyOld'; font-size: 76px; line-height: 86px; font-weight: 700; color: #08685c; text-transform: capitalize; margin-bottom: 28px;}
@@ -278,8 +278,9 @@ nav:after {content: ''; position: absolute; top: 29px; bottom: 25px; right: 3px;
 /*--------------- #news ---------------*/
 #news {text-align: center; padding-top: 47px;}
 #news h2 {margin-bottom: 34px;}
+#news a.btn {z-index: 1;}
 #news-links {position: relative;}
-#news-links:after {content: ''; position: absolute; top: 0; bottom: 60px; left: 0; right: 0; pointer-events: none; background-image: linear-gradient(to right, #fff, transparent, #fff); opacity: 0.5;}
+#news-links:after {content: ''; position: absolute; top: 0; bottom: 60px; left: 0; right: 0; pointer-events: none; background-image: linear-gradient(to right,#fff,transparent,#fff); opacity: 0.5;}
 #news-links .owl-height {height: 670px!important;}
 .news-link {text-align: left; background-color: #fff; border-radius: 8px;}
 .owl-item.center .news-link {box-shadow: 0px 5px 19.95px 1.05px rgba(0, 0, 0, 0.1); transform: scaleX(1.01);}
@@ -291,7 +292,14 @@ nav:after {content: ''; position: absolute; top: 29px; bottom: 25px; right: 3px;
 .news-link a {font-size: 12px; line-height: 48px; font-weight: 700; color: #83aa92; text-transform: uppercase; text-decoration: none; float: right; margin-right: 4px;}
 .news-link a:after {content: '\f061'; font-family: 'FontAwesome'; margin-left: 8px;}
 
-
+/*--------------- #events ---------------*/
+#events {position: relative; margin-top: 93px; padding-bottom: 40px; background-color: #f0edd9;}
+#events:before {content: ''; position: absolute; bottom: 100%; left: 0; right: 0; background-image: linear-gradient(transparent,#f0edd9); height: 15%;}
+#events .container {width: 1330px;}
+#events-bg {position: absolute; top: 50px; left: 0; width: 800px; height: 829px;}
+#events-whitespace {position: absolute; top: 100%; left: 0; right: 0;}
+#events-info {float: right; margin-right: 1px;}
+#events a.btn {margin-top: 45px; width: 244px;}
 
 /* -----------------------------------------
 

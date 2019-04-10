@@ -392,7 +392,7 @@
 
 		// matchHeight
 		if(typeof $.fn.matchHeight !== "undefined"){
-			$('.equal').matchHeight({
+			$('.news-link').matchHeight({
 				//defaults
 				byRow: true,
 				property: 'height', // height or min-height

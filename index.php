@@ -182,9 +182,14 @@
 
 		<section id="events">
 			<div id="events-bg" style="background:url('./_assets_/images/events-bg.png') center no-repeat;background-size:cover;"></div>
-			<h2>upcoming events</h2>
-			<div><img src="./_assets_/images/events.png" alt="Events"></div>
-			<a href="./" class="btn">see all events</a>
+			<img id="events-whitespace" src="./_assets_/images/events-whitespace.png">
+			<div class="container clearfix">
+				<div id="events-info">
+					<h2>upcoming events</h2>
+					<div><img src="./_assets_/images/events.png" alt="Events"></div>
+					<a href="./" class="btn">see all events</a>
+				</div><!-- /#events-info -->
+			</div><!-- /.container.clearfix -->
 		</section><!-- /#events -->
 
 		<section id="social">
