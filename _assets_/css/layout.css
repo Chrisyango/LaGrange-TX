@@ -264,6 +264,7 @@ nav,
 #welcome:before {content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 25%; background-image: linear-gradient(#f0edd9,transparent);}
 #welcome .container {width: 1470px;}
 #welcome-bg {position: absolute; top: 0; right: 0; width: 871px; height: 800px;}
+#welcome-bg-cover {width: 100%; height: 100%;}
 #welcome h1 {display: inline-block; font-family: 'GoudyOld'; font-size: 76px; line-height: 86px; font-weight: 700; color: #08685c; text-transform: capitalize; margin-bottom: 28px;}
 #welcome h1 span {font-family: 'Montserrat'; font-size: 26px; line-height: 50px; letter-spacing: 0.1em; font-weight: 700; color: #ffb300; text-transform: uppercase; display: block;}
 #welcome-img {display: inline-block; width: 129px; height: 125px; position: relative; top: 18px; left: 10px;}
@@ -298,6 +299,7 @@ nav,
 #events:before {content: ''; position: absolute; bottom: 100%; left: 0; right: 0; background-image: linear-gradient(transparent,#f0edd9); height: 15%;}
 #events .container {width: 1330px;}
 #events-bg {position: absolute; top: 50px; left: 0; width: 800px; height: 829px;}
+#events-bg-cover {width: 100%; height: 100%;}
 #events-whitespace {position: absolute; top: 100%; left: 0; right: 0;}
 #events-info {float: right; margin-right: 1px;}
 #events a.btn {margin-top: 45px; width: 244px;}

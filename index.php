@@ -108,7 +108,9 @@
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
 				</p>
 			</div><!-- /#welcome-info.container -->
-			<div id="welcome-bg" style="background:url('./_assets_/images/welcome-bg.png') center no-repeat;background-size:cover;"></div>
+			<div id="welcome-bg" style="background:url('./_assets_/images/welcome-bg.jpg') center no-repeat;background-size:cover;">
+				<div id="welcome-bg-cover" style="background:url(./_assets_/images/welcome-bg-cover.png) center no-repeat;background-size:cover;"></div>
+			</div>
 		</section><!-- /#welcome -->
 
 		<section id="quick-links">
@@ -181,7 +183,9 @@
 		</section><!-- /#news -->
 
 		<section id="events">
-			<div id="events-bg" style="background:url('./_assets_/images/events-bg.png') center no-repeat;background-size:cover;"></div>
+			<div id="events-bg" style="background:url('./_assets_/images/events-bg.jpg') center no-repeat;background-size:cover;">
+				<div id="events-bg-cover" style="background:url('./_assets_/images/events-bg-cover.png') center no-repeat;background-size:cover;"></div>
+			</div>
 			<img id="events-whitespace" src="./_assets_/images/events-whitespace.png">
 			<div class="container clearfix">
 				<div id="events-info">
