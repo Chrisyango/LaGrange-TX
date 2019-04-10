@@ -243,38 +243,21 @@
 	})
 
 	// Twitter Feed
-	// if(typeof $.fn.tweet !== "undefined"){
-	// 	$("#twitterfeed").tweet({
-	// 		modpath: '_assets_/plugins/twitter/',
-	// 		username: "RevizeSoftware",
-	// 		join_text: "auto",
-	// 		avatar_size: 50,
-	// 		count: 3,
-	// 		auto_join_text_default: "",
-	// 		auto_join_text_ed: "",
-	// 		auto_join_text_ing: "",
-	// 		auto_join_text_reply: "",
-	// 		auto_join_text_url: "",
-	// 		loading_text: "Loading Tweet..."
-	// 	});
-	// }
-
-	// Instafeed Feed
-	// if(typeof(window.Instafeed) === "function"){
-	// 	var instaFeed = new Instafeed({
-	// 		get: 'user',
-	// 		userId: 8987997106,
-	// 		clientId: '924f677fa3854436947ab4372ffa688d',
-	// 		accessToken: '8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9',
-	// 		resolution: 'standard_resolution',
-	// 		template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /><span>{{caption}}</span></a>',
-	// 		sortBy: 'most-recent',
-	// 		limit: 3,
-	// 		links: false,
-	// 		target: 'instafeed'
-	// 	});
-	// 	instaFeed.run();
-	// }
+	if(typeof $.fn.tweet !== "undefined"){
+		$("#twitter-feed").tweet({
+			modpath: '_assets_/plugins/twitter/',
+			username: "RevizeSoftware",
+			join_text: "auto",
+			avatar_size: 0,
+			count: 3,
+			auto_join_text_default: "",
+			auto_join_text_ed: "",
+			auto_join_text_ing: "",
+			auto_join_text_reply: "",
+			auto_join_text_url: "",
+			loading_text: "Loading Tweet..."
+		});
+	}
 
 	// Sticky
 	if(typeof $.fn.sticky !== "undefined"){
@@ -364,28 +347,69 @@
 				// Facebook
 				facebook:{
 					accounts: ['@spanishforklibrary'],
-					limit: 6,
+					limit: 3,
 					access_token: 'EAAMkcCLFBs8BAEnpzLa3fg98gku0FhSwmvKZAujQ5m6RLRlHnIUnPaAexISWwIMA4VEoHuFUEWufVXIsasnQFRaDys2613NJUqt5sE5FqAr1sYrgnLZBPgeDmP8cZAkv7sFZBQOxUdrz2B7udHItF8tNMWiZC5iJfqkmWWK06BQZDZD'
 				},
 
+				// Instagram
+				instagram:{
+				accounts: ['&251086740'],
+				limit: 3,
+				access_token: '251086740.1677ed0.e1c9d6d2c0e747518b4d5dccec71a1bd'
+				},
+
 				// General settings
-				length:45,
+				length:120,
 				show_media:true,
 				media_min_width: 300,
 				template: "_assets_/templates/template.html",
 				callback: function() {
-					let socialCount = $('.social-feed-element').length;
-					const socialItem = function(num) {
-						return (socialCount >= num ? num : socialCount);
+					$('.tweet_list > li').addClass('social-feed-element').each(function() {
+						$(this).prependTo($('#social-feed'));
+					});
+					if ($('.tweet_list').length) {
+						let socialCount = $('.social-feed-element').length;
+						const socialItem = function(num) {
+							return (socialCount >= num ? num : socialCount);
+						}
+
+						var owl = $("#social-feed")
+						var fixOwl = function(){
+							var $stage = $('.owl-stage'),
+								stageW = $stage.width(),
+								$el = $('.owl-item'),
+								elW = 0;
+							$el.each(function() {
+								elW += $(this).width()+ +($(this).css("margin-right").slice(0, -2))
+							});
+								if ( elW > stageW ) {
+									$stage.width( elW );
+							};
+						}
+						var randomOwl = function(){
+							owl.children().sort(function(){
+									return Math.round(Math.random()) - 0.5;
+							}).each(function(){
+									$(this).appendTo(owl);
+							});
+						};
+
+						owl.owlCarousel({
+							loop: socialCount > 1 ? true : false,
+							onInitialize : randomOwl,
+							onInitialized: fixOwl,
+							nav: true,
+							autoWidth: true,
+							navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
+							margin: 30,
+						});
 					}
-					$("#social-feed").owlCarousel({
-						loop: socialCount > 1 ? true : false,
-						nav: true,
-						autoHeight: true,
-						autoWidth: true,
-						navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
-						margin: 30,
-						loop: false,
+					$('.social-feed-element').matchHeight({
+						//defaults
+						byRow: true,
+						property: 'height', // height or min-height
+						target: null,
+						remove: false
 					});
 				}
 			});

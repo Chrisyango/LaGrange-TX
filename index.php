@@ -203,7 +203,7 @@
 			<div id="social-feed" class="owl-carousel">
 			</div>
 			<!-- <div id="instafeed"></div> -->
-			<!-- <div id="twitterfeed"></div> -->
+			<div id="twitter-feed"></div>
 		</section><!-- /#social -->
 	</section><!-- /#content -->
 </main>
