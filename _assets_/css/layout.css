@@ -447,12 +447,29 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 
 }
 
+@media only screen and (max-width:1440px) {
+
+	/*--------------- #welcome ---------------*/
+	#welcome {padding: 200px 0;}
+	#welcome-bg {width: 700px; height: 643px;}
+	
+}
+
 @media only screen and (max-width:1280px) {
 
 	/*--------------- #nav ---------------*/
 	nav,
 	#nav {margin: 0 10px 0 0;}
 	#nav li a {font-size: 13px; padding: 0 5px;}
+
+	/*--------------- #welcome ---------------*/
+	#welcome {padding: 120px 0;}
+	#welcome-bg {width: 550px; height: 505px;}
+	#welcome h1 {font-size: 68px; line-height: 76px; margin-bottom: 10px;}
+	#welcome h1 span {font-size: 22px; line-height: 45px;}
+	#welcome-img {width: 100px; height: 97px;}
+	#welcome p {font-size: 14px;}
+
 }
 
 @media only screen and (max-width:991px) {
@@ -498,6 +515,12 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	#flyout ul span{width:100%}
 	#flyout li:hover > ul{display:none}
 
+	/*--------------- #welcome ---------------*/
+	#welcome {padding: 0;}
+	#welcome-bg {position: static; width: 100%; height: 500px;}
+	#welcome-bg-cover {display: none;}
+	#welcome p {width: 100%;}
+
 }
 
 	/* All Mobile Sizes (devices and browser) */
@@ -510,6 +533,11 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	.share-btns a{height:auto;padding:10px;width:100%;font-size:12px;white-space:nowrap;overflow:hidden}
 	.share-btns i{display:block;line-height:50px!important;font-size:20px}
 
+	/*--------------- #welcome ---------------*/
+	#welcome h1 {font-size: 60px; line-height: 70px;}
+	#welcome h1 span {font-size: 20px; line-height: 38px;}
+	#welcome-bg {height: 300px;}
+
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -521,6 +549,12 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	/*--------------- #nav ---------------*/
 	#nav li a,
 	#nav li span {font-size: 12px;}
+
+	/*--------------- #welcome ---------------*/
+	#welcome h1 {font-size: 54px; line-height: 64px;}
+	#welcome h1 span {font-size: 18px; line-height: 34px;}
+	#welcome-img {width: 75px; height: 73px; top: 0;}
+
 }
 
 @media print {

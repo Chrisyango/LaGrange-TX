@@ -101,6 +101,9 @@
 <main id="main">
 	<section id="content">
 		<section id="welcome">
+			<div id="welcome-bg" style="background:url('./_assets_/images/welcome-bg.jpg') center no-repeat;background-size:cover;">
+				<div id="welcome-bg-cover" style="background:url(./_assets_/images/welcome-bg-cover.png) center no-repeat;background-size:cover;"></div>
+			</div><!-- /#welcome-bg -->
 			<div id="welcome-info" class="container">
 				<h1><span>welcome to</span>la grange</h1>
 				<div id="welcome-img" style="background:url('./_assets_/images/welcome.png') center no-repeat;background-size:cover;"></div>
@@ -108,9 +111,6 @@
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
 				</p>
 			</div><!-- /#welcome-info.container -->
-			<div id="welcome-bg" style="background:url('./_assets_/images/welcome-bg.jpg') center no-repeat;background-size:cover;">
-				<div id="welcome-bg-cover" style="background:url(./_assets_/images/welcome-bg-cover.png) center no-repeat;background-size:cover;"></div>
-			</div>
 		</section><!-- /#welcome -->
 
 		<section id="quick-links">
