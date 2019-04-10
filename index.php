@@ -87,7 +87,7 @@
 			<div id="weather"></div><!-- /#weather -->
 		</div><!-- /.weather -->	
 
-		<div id="search-toggle" class="fa fa-search">search</div>
+		<div id="search-toggle" class="fa fa-search" tabindex="0">search</div>
 		<div id="search">
 			<form class="search-form" method="get" action="search.php">
 				<label class="fa fa-search" for="search-input"></label>

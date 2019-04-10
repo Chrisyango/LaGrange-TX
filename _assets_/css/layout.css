@@ -234,13 +234,14 @@ body:after{content: ''; position:absolute; top: 0; bottom: 0; left: 0; right: 0;
 .toggle,
 .toggle2{display:none}
 
-header .container {position: relative; width: 1470px; text-align: right; font-size: 0; background-color: #edf6f1;}
+header {background-color: #edf6f1;}
+header .container {position: relative; width: 1470px; text-align: right; font-size: 0; z-index: 100;}
 #logo {display: block; float: left; width: 222px; margin-top: 3px;}
 nav,
 #nav {position: relative; display: inline-block; margin: 0 33px 0 0; padding: 0;}
-nav:after {content: ''; position: absolute; top: 29px; bottom: 25px; right: 3px; width: 2px; background: black;}
-#nav li {display: inline-block; margin: 0;}
-#nav li a {display: block; font-size: 14px; line-height: 68px; font-weight: 600; color: #000; text-transform: uppercase; text-decoration: none; padding: 0 10px;}
+nav:after {content: ''; position: absolute; top: 29px; bottom: 27px; right: 3px; width: 2px; background: black;}
+#nav li {position: relative; display: inline-block; margin: 0;}
+#nav li a {display: block; font-size: 14px; line-height: 70px; font-weight: 600; color: #000; text-transform: uppercase; text-decoration: none; padding: 0 10px;}
 #nav ul {display: none;}
 
 .weather,
@@ -248,11 +249,12 @@ nav:after {content: ''; position: absolute; top: 29px; bottom: 25px; right: 3px;
 .forecast {font-size: 11px; line-height: 68px; font-weight: 600; color: #08685c;}
 .weather i {font-size: 20px; margin-right: 5px;}
 
-#search-toggle {font-family: 'MontSerrat';font-size: 11px; line-height: 68px; font-weight: 700; color: #08685c; text-transform: uppercase;}
+#search-toggle {position: relative; top: -1px; font-family: 'MontSerrat';font-size: 11px; font-weight: 700; color: #08685c; text-transform: uppercase;}
 #search-toggle:before {font-family: 'FontAwesome'; margin-right: 3px;}
-#search {position: absolute; top:100%; right: 0;}
+#search {display: none; position: absolute; top:calc(100% + 15px); right: 15px; width: 300px;}
 #search label {display: none;}
-#search button {position: absolute; top: 0; right: 0;}
+#search input {height: 40px; padding: 0 70px 0 10px;}
+#search button {position: absolute; top: 0; right: 0; width: 60px; height: 40px; line-height: 40px; padding: 0; font-size: 16px;}
 
 /*--------------- #content ---------------*/
 #content h2 {font-family: 'GoudyOld'; font-size: 48px; line-height: 68px; color: #08685c; text-transform: capitalize;}
@@ -432,6 +434,14 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	#nav .focused .toggle,#nav .focused .toggle2,#flyout .focused .toggle{display:inline-block;margin-left:8px}
 	#flyout .focused .toggle,#nav .focused .toggle2{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
 	#flyout,#nav{display:block!important}
+
+	/*--------------- #nav ---------------*/
+	#nav li.dropdown:hover:after {content: ''; position: absolute; bottom: 0; left: 11px; right: 8px; height: 5px; background-color: #ffb300;}
+	#nav li:hover>ul {display: block;}
+	#nav ul {position: absolute; top: 100%; left: 11px; margin: 0; padding: 0; background-color: #08685c; text-align: left; width: 230px; border-radius: 0 0 8px 8px; padding: 16px 0 15px;}
+	#nav ul li {display: block; margin: 0; padding: 0; padding: 0 15px;}
+	#nav ul li a {display: block; font-size: 13px; line-height: 29px; font-weight: 500; color: #f0edd9; text-transform: capitalize;}
+	#nav ul ul {left: 100%; top: 0; border-radius: 0 8px 8px 0;}
 
 }
 

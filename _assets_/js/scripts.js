@@ -54,13 +54,13 @@
 	}
 
 	// Search Toggle
-	$('#search-toggle').on('click',function(e){
+	$('#search-toggle').on('click keypress',function(e){
 		$('#search').stop().slideToggle(200);
 		$(this).toggleClass('fa-search fa-close');
 	});
 
 	// Navigation Toggle
-	$("#nav-toggle").on("click", function(){
+	$("#nav-toggle").on("click keypress", function(){
 		$("#nav").stop().slideToggle();
 		$(this).toggleClass("active");
 	});
@@ -88,6 +88,7 @@
 	// $("#nav > li:has(ul)").addClass('first-parent').children("a,span").append('<i class="fa fa-angle-down down-arrow">');
 
 	// Menu Toggles
+	$("#nav >li").has("ul").addClass('dropdown')
 	$("#nav >li>ul,#flyout >li>ul").addClass('first-level');
 	$("#nav  li ul ul").addClass('second-level');
 	$("#nav >li:has(ul)").find("a:first").append('<i class="fa fa-angle-down toggle" tabindex="0">');
