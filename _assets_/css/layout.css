@@ -318,6 +318,18 @@ nav:after {content: ''; position: absolute; top: 29px; bottom: 25px; right: 3px;
 #social-feed .owl-next {position: absolute; top: 50%; left: 20px; transform: translateY(-56%); font-size: 36px; z-index: 1;}
 #social-feed .owl-next {left: unset; right: 20px;}
 
+/*--------------- footer ---------------*/
+footer {padding: 51px 0; background-color: #032924;}
+footer .container {width: 1200px;}
+footer span {position: relative; font-size: 14px; line-height: 24px; font-weight: 600; color: #eef7f2;}
+#revize-logo span:last-of-type {float: right;}
+#revize-logo span:last-of-type a {position: relative; color: #eef7f2; text-decoration: none; text-transform: capitalize;}
+#revize-logo span:last-of-type a:first-of-type {font-family: 'Roboto'; font-size: 15px;}
+#revize-logo span:last-of-type a:last-of-type {margin-left: 20px;}
+#revize-logo span:last-of-type a:last-of-type:before {content: ''; position: absolute; left: -11px; top: 3px; bottom: 1px; width: 2px; background-color: #eef7f2;}
+#contact span:last-of-type {margin-left: 20px;}
+#contact span:last-of-type:before {content: ''; position: absolute; left: -12px; top: 3px; bottom: 1px; width: 2px; background-color: #eef7f2;}
+
 /* -----------------------------------------
 
 #inner
