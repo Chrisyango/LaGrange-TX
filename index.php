@@ -40,7 +40,7 @@
 	<a href="#main" id="skip" tabindex="0">SKIP TO CONTENT</a>
 
 	<div class="container">
-		<a href="./" id="logo" class="clearfix">
+		<a href="./" id="logo">
 			<img src="./_assets_/images/logo.png" alt="Logo">
 		</a><!-- /.logo -->
 
@@ -87,7 +87,7 @@
 			<div id="weather"></div><!-- /#weather -->
 		</div><!-- /.weather -->	
 
-		<div id="search-toggle" class="fa fa-search" tabindex="0">search</div>
+		<div id="search-toggle" class="fa fa-search hidden-sm hidden-xs" tabindex="0">search</div>
 		<div id="search">
 			<form class="search-form" method="get" action="search.php">
 				<label class="fa fa-search" for="search-input"></label>

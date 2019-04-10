@@ -239,10 +239,9 @@ header .container {position: relative; width: 1470px; text-align: right; font-si
 #logo {display: block; float: left; width: 222px; margin-top: 3px;}
 nav,
 #nav {position: relative; display: inline-block; margin: 0 33px 0 0; padding: 0;}
-nav:after {content: ''; position: absolute; top: 29px; bottom: 27px; right: 3px; width: 2px; background: black;}
 #nav li {position: relative; display: inline-block; margin: 0;}
 #nav li a {display: block; font-size: 14px; line-height: 70px; font-weight: 600; color: #000; text-transform: uppercase; text-decoration: none; padding: 0 10px;}
-#nav ul {display: none;}
+#nav ul {display: none; margin: 0; padding: 0;}
 
 .weather,
 #weather {display: inline-block;margin-right: 8px;}
@@ -436,13 +435,22 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	#flyout,#nav{display:block!important}
 
 	/*--------------- #nav ---------------*/
+	nav:after {content: ''; position: absolute; top: 29px; bottom: 27px; right: 3px; width: 2px; background: black;}
 	#nav li.dropdown:hover:after {content: ''; position: absolute; bottom: 0; left: 11px; right: 8px; height: 5px; background-color: #ffb300;}
 	#nav li:hover>ul {display: block;}
-	#nav ul {position: absolute; top: 100%; left: 11px; margin: 0; padding: 0; background-color: #08685c; text-align: left; width: 230px; border-radius: 0 0 8px 8px; padding: 16px 0 15px;}
+	#nav ul {position: absolute; top: 100%; left: 11px; background-color: #08685c; text-align: left; width: 230px; border-radius: 0 0 8px 8px; padding: 16px 0 15px;}
 	#nav ul li {display: block; margin: 0; padding: 0; padding: 0 15px;}
 	#nav ul li a {display: block; font-size: 13px; line-height: 29px; font-weight: 500; color: #f0edd9; text-transform: capitalize;}
 	#nav ul ul {left: 100%; top: 0; border-radius: 0 8px 8px 0;}
 
+}
+
+@media only screen and (max-width:1280px) {
+
+	/*--------------- #nav ---------------*/
+	nav,
+	#nav {margin: 0 10px 0 0;}
+	#nav li a {font-size: 13px; padding: 0 5px;}
 }
 
 @media only screen and (max-width:991px) {
@@ -457,26 +465,27 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 
 	/*--------------- #nav ---------------*/
 	#search-toggle-mobile,
-	#nav-toggle{border:1px solid rgba(0,0,0,.15);font-size:20px;border-radius:4px;margin-left:5px;margin-top:25px;cursor:pointer}
+	#nav-toggle{border:1px solid rgba(0,0,0,.15);font-size:20px;border-radius:4px;margin-left:5px;margin-top:10px;cursor:pointer}
+	#search {width: calc(100% - 30px);}
 
 	.toggle,
 	.toggle2,
 	#search-toggle-mobile,
 	#nav-toggle{display:inline-block;cursor:pointer;height:45px;width:45px;line-height:45px;text-align:center}
 	.down-arrow{display:none} /* if not hidden above */
-	#nav{display:none}
+	nav {display: block; margin: 15px 0; text-align: left;}
+	#nav{display:none; margin: 0;background-color:#08685c}
 	#nav li{float:none;display:block}
 	#nav li a,
-	#nav li span{padding:20px 30px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px}
-	#nav ul{position:static;top:0;padding:0;background:rgba(0,0,0,.2)}
-	#nav li:hover > ul{display:none}
+	#nav li span{padding:15px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px;color:#fff;}
+	#nav ul{position:static;top:0;padding:0;background:rgba(0,0,0,.2);}
+	#nav li:hover>ul{display:none}
 	#nav ul a,
 	#nav ul span{width:100%}
 	#nav ul ul{left:0}
 	#nav .toggle,
 	#nav .toggle2,
 	#flyout .toggle{position:absolute;right:0;top:0;background:rgba(0,0,0,.2)}
-	#nav li li:hover > a{background:none;color:#fff}
 
 	#flyout{display:none}
 	#flyout li{}
@@ -505,7 +514,12 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 @media only screen and (min-width:480px) and (max-width:767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width:479px) {}
+@media only screen and (max-width:479px) {
+
+	/*--------------- #nav ---------------*/
+	#nav li a,
+	#nav li span {font-size: 12px;}
+}
 
 @media print {
 	header,

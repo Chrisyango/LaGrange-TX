@@ -59,6 +59,11 @@
 		$(this).toggleClass('fa-search fa-close');
 	});
 
+	$('#search-toggle-mobile').on('click keypress',function(e){
+		$('#search').stop().slideToggle(200);
+		$(this).toggleClass('fa-search fa-close');
+	});
+
 	// Navigation Toggle
 	$("#nav-toggle").on("click keypress", function(){
 		$("#nav").stop().slideToggle();
