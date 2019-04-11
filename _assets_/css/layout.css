@@ -257,7 +257,7 @@ nav,
 
 /*--------------- #content ---------------*/
 #content h2 {font-family: 'GoudyOld'; font-size: 48px; line-height: 68px; color: #08685c; text-transform: capitalize;}
-#content a.btn {position: relative; width: 230px; height: 50px; font-size: 14px; line-height: 50px; letter-spacing: 0.1em; background-color: #08685c; padding: 0; border-radius: 8px;}
+#content a.btn {position: relative; height: 50px; font-size: 14px; line-height: 50px; letter-spacing: 0.1em; background-color: #08685c; padding: 0; border-radius: 8px;}
 
 /*--------------- #welcome ---------------*/
 #welcome {position: relative; padding: 255px 0; background-color: #f0edd9;}
@@ -283,17 +283,22 @@ nav,
 /*--------------- #news ---------------*/
 #news {text-align: center; padding-top: 47px;}
 #news h2 {margin-bottom: 34px;}
-#news a.btn {z-index: 1;}
+#news a.btn {width: 230px; z-index: 1;}
 #news-links {position: relative;}
-#news-links:after {content: ''; position: absolute; top: 0; bottom: 60px; left: 0; right: 0; pointer-events: none; background-image: linear-gradient(to right,#fff,transparent,#fff); opacity: 0.5;}
-.news-link {text-align: left; background-color: #fff; border-radius: 8px;}
+#news-links:before,
+#news-links:after {content: ''; position: absolute; top: 0; bottom: 60px; left: 0; width: 50%; z-index: 1; pointer-events: none; background-image: linear-gradient(to right,#fff,transparent); opacity: 0.5;}
+#news-links:after {left: unset; right: 0; background-image: linear-gradient(to right,transparent,#fff);}
+#news-links .owl-prev,
+#news-links .owl-next {position: absolute; top: 50%; left: 15px; transform: translateY(-50%); font-size: 30px; z-index: 2;}
+#news-links .owl-next {left: unset; right: 15px;}
+.news-link {text-align: left; background-color: #fff; border-radius: 8px; transition: 0.3s all;}
 .owl-item.center .news-link {box-shadow: 0px 5px 19.95px 1.05px rgba(0, 0, 0, 0.1); transform: scaleX(1.01);}
-.news-link-info {padding: 43px 45px 79px;border-radius: 0 0 8px 8px;}
+.news-link-info {padding: 43px 49px 31px;border-radius: 0 0 8px 8px;}
 .news-link-img {width: 100%; height: 300px;border-radius: 8px 8px 0 0;}
 .news-link span {font-size: 12px; font-weight: 700; color: #08685c; text-transform: uppercase;}
 .news-link h3 {font-family: 'GouldyOld'; font-size: 28px; line-height: 38px; font-weight: 700; color: #000; text-transform: capitalize; margin: 9px 0;}
 .news-link p {font-size: 14px; line-height: 24px; color: #000; margin: 0;}
-.news-link a {font-size: 12px; line-height: 48px; font-weight: 700; color: #83aa92; text-transform: uppercase; text-decoration: none; float: right; margin-right: 4px;}
+.news-link a {font-size: 12px; line-height: 48px; font-weight: 700; color: #83aa92; text-transform: uppercase; text-decoration: none; display: block; text-align: right;}
 .news-link a:after {content: '\f061'; font-family: 'FontAwesome'; margin-left: 8px;}
 
 /*--------------- #events ---------------*/
@@ -312,7 +317,7 @@ nav,
 .social-links a {text-decoration: none; font-size: 18px; margin: 0 8px; color: #08685c;}
 
 #social-feed {position: relative; text-align: left; margin-top: 47px; padding: 0 0 0 30px;}
-#social-feed:after {content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; pointer-events: none; background-image: linear-gradient(to right,transparent 90%,#fff);}
+#social-feed:after {content: ''; position: absolute; top: 0; bottom: 13px; left: 0; right: 0; pointer-events: none; background-image: linear-gradient(to right,transparent 90%,#fff);}
 .social-feed-element {position: relative; display: inline-block; background-color: #fff; border-radius: 8px; overflow: hidden; width: 570px;}
 .social-feed-element i {position: absolute; bottom: -43px; right: 10px; font-size: 200px; color: #08685c; opacity: 0.07;}
 .social-img-container {float: left; width: 180px; height: 180px; overflow: hidden; border-radius: 8px 0 0 8px;}
@@ -454,6 +459,10 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	/*--------------- #welcome ---------------*/
 	#welcome {padding: 200px 0;}
 	#welcome-bg {width: 700px; height: 643px;}
+
+	/*--------------- #events ---------------*/
+	#events-bg {width: 700px; height: 725px;}
+	#events-info {margin: 0;}
 	
 }
 
@@ -471,6 +480,14 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	#welcome h1 span {font-size: 22px; line-height: 45px;}
 	#welcome-img {width: 100px; height: 97px;}
 	#welcome p {font-size: 14px;}
+
+	/*--------------- #news ---------------*/
+	#news-links:before,
+	#news-links:after {width: 30%;}
+
+	/*--------------- #events ---------------*/
+	#events-bg {width: 500px; height: 518px;}
+	#events-info {width: 450px;}
 
 }
 
@@ -516,6 +533,10 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	#flyout ul a,
 	#flyout ul span{width:100%}
 	#flyout li:hover > ul{display:none}
+	
+	/*--------------- #content ---------------*/
+	#content h2 {font-size: 44px; line-height: 62px;}
+	#content a.btn {height: 45px; line-height: 45px; font-size: 13px;}
 
 	/*--------------- #welcome ---------------*/
 	#welcome {padding: 0;}
@@ -527,6 +548,17 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	#quick-links {margin-top: 50px;}
 	.quick-link-icon {width: 55px; height: 55px;}
 	.quick-link h3 {font-size: 16px;}
+
+	/*--------------- #news ---------------*/
+	#news a.btn {width: 200px;}
+	.news-link-img {height: 250px;}
+	.news-link-info {padding: 30px;}
+	.news-link h3 {font-size: 24px; line-height: 32px;}
+
+	/*--------------- #events ---------------*/
+	#events-bg {display: none;}
+	#events-info {float: none; width: auto;}
+	#events a.btn {width: 210px;}
 
 }
 
@@ -540,6 +572,10 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	.share-btns a{height:auto;padding:10px;width:100%;font-size:12px;white-space:nowrap;overflow:hidden}
 	.share-btns i{display:block;line-height:50px!important;font-size:20px}
 
+	/*--------------- #content ---------------*/
+	#content h2 {font-size: 40px; line-height: 56px;}
+	#content a.btn {font-size: 12px; height: 40px; line-height: 40px;}
+
 	/*--------------- #welcome ---------------*/
 	#welcome h1 {font-size: 60px; line-height: 70px;}
 	#welcome h1 span {font-size: 20px; line-height: 38px;}
@@ -547,6 +583,20 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 
 	/*--------------- #quick-links ---------------*/
 	.quick-link h3 {padding: 9px 0;}
+
+	/*--------------- #news ---------------*/
+	#news a.btn {width: 170px;}
+	#news-links {padding: 0 45px;}
+	#news-links:before,
+	#news-links:after {width: 0;}
+	#news-links .owl-prev,
+	#news-links .owl-next {font-size: 24px;}
+	#news-links .owl-item {padding: 0 15px;}
+	.news-link-img {height: 200px;}
+	.news-link-info {padding: 15px;}
+
+	/*--------------- #events ---------------*/
+	#events a.btn {width: 180px;}
 
 }
 
@@ -560,10 +610,19 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	#nav li a,
 	#nav li span {font-size: 12px;}
 
+	/*--------------- #content ---------------*/
+	#content h2 {font-size: 36px; line-height: 50px;}
+
 	/*--------------- #welcome ---------------*/
 	#welcome h1 {font-size: 54px; line-height: 64px;}
 	#welcome h1 span {font-size: 18px; line-height: 34px;}
 	#welcome-img {width: 75px; height: 73px; top: 0;}
+
+	/*--------------- #news ---------------*/
+	.news-link span {font-size: 11px;}
+	.news-link h3 {font-size: 22px; line-height: 28px;}
+	.news-link p {font-size: 13px; line-height: 22px;}
+	.news-link a {font-size: 11px; line-height: 36px;}
 
 }
 

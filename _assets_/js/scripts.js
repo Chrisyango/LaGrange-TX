@@ -329,7 +329,7 @@
 			nav: true,
 			autoHeight: true,
 			navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
-			margin: 103,
+			margin: 70,
 			center: true,
 			startPosition: 1,
 			onInitialized: function() {
@@ -342,13 +342,14 @@
 				0: {
 					items: newsLinkItem(1),
 				},
-				600: {
+				768: {
 					items: newsLinkItem(2),
 				},
-				1000: {
+				1281: {
 					items: newsLinkItem(3),
 					loop: false,
-					nav: false
+					nav: false,
+					margin: 103
 				}
 			}
 		});
