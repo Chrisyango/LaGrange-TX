@@ -14,6 +14,7 @@
 -----------------------------------------*/
 @font-face {
 	font-family: 'GoudyOld';
+	font-weight: 800;
 	src: 
 		url('../fonts/goudyold/GoudyOldStyleExtraBold.otf');
 }
@@ -32,8 +33,8 @@ h3{font-size:28px}
 h4{font-size:21px}
 h5{font-size:16px}
 h6{font-size:14px}
-.header{font-size:28px;color:#111;margin-bottom:30px}
-.subheader{font-size:21px;color:#111;margin-bottom:30px}
+.header{font-family: 'GoudyOld'; font-size: 32px; color: #08685c; text-transform: capitalize; display: block; margin: 20px 0 36px}
+.subheader{font-size: 22px; line-height: 26px; font-weight: 700; color:#08685c; text-transform: uppercase; display: block; margin: 27px 0 12px}
 p{margin:0 0 30px 0}
 em{font-style:italic}
 strong,b{font-weight:bold}
@@ -247,7 +248,7 @@ nav,
 #welcome .container {width: 1470px;}
 #welcome-bg {position: absolute; top: 0; right: 0; width: 871px; height: 800px;}
 #welcome-bg-cover {width: 100%; height: 100%;}
-#welcome h1 {display: inline-block; font-family: 'GoudyOld'; font-size: 76px; line-height: 86px; font-weight: 700; color: #08685c; text-transform: capitalize; margin-bottom: 28px;}
+#welcome h1 {display: inline-block; font-family: 'GoudyOld'; font-size: 76px; line-height: 86px; color: #08685c; text-transform: capitalize; margin-bottom: 28px;}
 #welcome h1 span {font-family: 'Montserrat'; font-size: 26px; line-height: 50px; letter-spacing: 0.1em; font-weight: 700; color: #ffb300; text-transform: uppercase; display: block;}
 #welcome-img {display: inline-block; width: 129px; height: 125px; position: relative; top: 18px; left: 10px;}
 #welcome p {font-size: 16px; line-height: 26px; color: #000; width: 40%;}
@@ -310,7 +311,7 @@ nav,
 .tweet_time a,
 .time-posted {font-size: 12px; line-height: 42px; font-weight: 700; color: #bed3c6; text-transform: uppercase; text-decoration: none;}
 .tweet_text,
-.social-feed-text {font-family: 'GoudyOld'; font-size: 18px; line-height: 28px; font-weight: 700; color: #000; margin: 1px 0;}
+.social-feed-text {font-family: 'GoudyOld'; font-size: 18px; line-height: 28px; color: #000; margin: 1px 0;}
 #social-feed .owl-prev,
 #social-feed .owl-next {position: absolute; top: 50%; left: 20px; transform: translateY(-56%); font-size: 36px; z-index: 1; opacity: 0; transition: 0.3s all;}
 #social-feed .owl-next {left: unset; right: 20px; opacity: 1;}
@@ -343,24 +344,39 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 #inner
 
 -----------------------------------------*/
+#freeform main {padding-bottom: 21px; background-color: #f0edd9;}
+#freeform>main>.container {width: 1200px;}
 
 /*--------------- #slider ---------------*/
 #freeform #slider {position: relative; height: 450px;}
 #freeform #inner-whitespace {position: absolute; left: 0; right: 0; bottom: 0; z-index: 51;}
 
+/*--------------- #flyout ---------------*/
+#side-content {position: relative; top: -100px; z-index: 100; background-color:#f1f8f4; margin-right: -30px; border-radius: 8px; padding: 29px 0 21px;}
 #flyout{margin:0;padding:0}
 #flyout li{margin:0;display:block;position:relative}
 #flyout a,
-#flyout span{text-decoration:none;padding:15px 20px;display:block;border-bottom:1px solid #000}
+#flyout span{font-size: 13px; line-height: 38px; font-weight: 500; text-decoration:none;padding:0;display:block;color: rgba(0,0,0,0.7); text-transform: capitalize; padding: 0 35px;}
+#flyout a:hover,
+#flyout span:hover {background-color: #08685c; color: rgba(229,244,235,0.7)}
 #flyout ul{display:none;position:absolute;top:0;left:100%;margin:0;padding:0;background:#aaa}
 #flyout ul a,
 #flyout ul span{font-size:13px;padding:10px 15px;width:180px}
 #flyout li:hover > ul{display:block}
+#flyout-header {font-family: 'GoudyOld'; font-size: 18px; line-height: 28px; font-weight: 800; color: #08685c; text-transform: capitalize; margin: 0 35px 7px; display: block;}
 
-#breadcrumbs{font-size:13px;text-transform:capitalize}
-#breadcrumbs p{margin:0}
-#breadcrumbs a{text-decoration:none}
-#breadcrumbs i{font-size:13px;margin:0 4px}
+/*--------------- #entry ---------------*/
+#entry {margin-top: 30px; margin-left: 70px;}
+
+#breadcrumbs{font-size:13px;text-transform:uppercase}
+#breadcrumbs p{font-size: 12px; margin:0; font-weight: 400; color:#000000;}
+#breadcrumbs a{text-decoration:none; font-weight: 700; color: #08685c;}
+#breadcrumbs a:after {content: '/'; margin: 0 7px;}
+
+#page-title {font-family: 'GoudyOld'; font-size: 32px; margin: 20px 0 36px; color: #08685c; text-transform: capitalize;}
+#post p {font-size: 16px; line-height: 26px; color: #000; margin-bottom: 22px}
+#post ul {margin: -4px 46px 20px; padding: 0;}
+#post ul li {font-size: 16px; line-height: 26px; font-weight: 600; color: #000; margin: 0 0 2px;}
 
 /* -----------------------------------------
 
@@ -436,7 +452,7 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	#flyout,#nav{display:block!important}
 
 	/*--------------- #nav ---------------*/
-	nav:after {content: ''; position: absolute; top: 29px; bottom: 27px; right: 4px; width: 2px; background: black;}
+	header nav:after {content: ''; position: absolute; top: 29px; bottom: 27px; right: 4px; width: 2px; background: black;}
 	#nav li.dropdown:hover:after {content: ''; position: absolute; bottom: 0; left: 11px; right: 8px; height: 5px; background-color: #ffb300;}
 	#nav li:hover>ul {display: block;}
 	#nav ul {position: absolute; top: 100%; left: 11px; background-color: #08685c; text-align: left; width: 230px; border-radius: 0 0 8px 8px; padding: 16px 0 15px;}
