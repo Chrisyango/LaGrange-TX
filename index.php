@@ -198,7 +198,7 @@
 
 		<section id="social">
 			<h2>we are social</h2>
-			<div class="social-links hidden-sm hidden-xs">
+			<div class="social-links">
 				<a href="./" class="fa fa-facebook"></a>
 				<a href="./" class="fa fa-twitter"></a>
 				<a href="./" class="fa fa-instagram"></a>
