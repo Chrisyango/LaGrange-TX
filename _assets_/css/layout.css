@@ -346,11 +346,13 @@ li.social-feed-element {width: 470px; padding: 22px 35px;}
 footer {padding: 51px 0; background-color: #032924;}
 footer .container {width: 1200px;}
 footer span {position: relative; font-size: 14px; line-height: 24px; font-weight: 600; color: #eef7f2;}
-#revize-logo span:last-of-type {float: right;}
-#revize-logo span:last-of-type a {position: relative; color: #eef7f2; text-decoration: none; text-transform: capitalize;}
-#revize-logo span:last-of-type a:first-of-type {font-family: 'Roboto'; font-size: 15px;}
-#revize-logo span:last-of-type a:last-of-type {margin-left: 20px;}
-#revize-logo span:last-of-type a:last-of-type:before {content: ''; position: absolute; left: -11px; top: 3px; bottom: 1px; width: 2px; background-color: #eef7f2;}
+#revize-logo {float: right;}
+#revize-logo span a {position: relative; color: #eef7f2; text-decoration: none; text-transform: capitalize;}
+#revize-logo span a:first-of-type {font-family: 'Roboto'; font-size: 15px;}
+#revize-logo span a:last-of-type {margin-left: 20px;}
+#revize-logo span a:last-of-type:before {content: ''; position: absolute; left: -11px; top: 3px; bottom: 1px; width: 2px; background-color: #eef7f2;}
+#contact {float: left;}
+#contact span:first-of-type {display: block;}
 #contact span:last-of-type {margin-left: 20px;}
 #contact span:last-of-type:before {content: ''; position: absolute; left: -12px; top: 3px; bottom: 1px; width: 2px; background-color: #eef7f2;}
 
@@ -502,7 +504,7 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	#freeform #formwizziwmorf tr,#freeform #formwizziwmorf tr td{display:block!important}
 	#freeform #formwizziwmorf tr table tr{display:table-row!important}
 	#freeform #formwizziwmorf tr table td{display:table-cell!important}
-	.floating-share-btn{top:unset;bottom:0;padding:10.5px;font-size:11px}
+	.floating-share-btn{top:unset;bottom:132px;padding:10.5px;font-size:11px}
 
 	/*--------------- #nav ---------------*/
 	#search-toggle-mobile,
@@ -563,6 +565,10 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	#events-info {float: none; width: auto;}
 	#events a.btn {width: 210px;}
 
+	/*--------------- footer ---------------*/
+	#contact,
+	#revize-logo {float: none;}
+
 }
 
 	/* All Mobile Sizes (devices and browser) */
@@ -603,6 +609,15 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	/*--------------- #events ---------------*/
 	#events a.btn {width: 180px;}
 
+	/*--------------- footer ---------------*/
+	footer {padding: 30px 0;}
+	footer span {font-size: 12px;}
+	#contact span:last-of-type {margin-left: 10px;}
+	#contact span:last-of-type:before {top: 0; bottom: 0; left: -8px;}
+	#revize-logo span a:last-of-type {margin-left: 10px;}
+	#revize-logo span a:last-of-type:before {top: 0; bottom: 0; left: -8px;}
+	#revize-logo span a:first-of-type {font-size: 13px;}
+
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -629,6 +644,9 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	.news-link p {font-size: 13px; line-height: 22px;}
 	.news-link a {font-size: 11px; line-height: 36px;}
 
+	/*--------------- footer ---------------*/
+	footer span {font-size: 11px;}
+	#revize-logo span a:first-of-type {font-size: 12px;}
 }
 
 @media print {

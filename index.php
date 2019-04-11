@@ -213,15 +213,15 @@
 
 <footer>
 	<div class="container">
-		<section id="revize-logo">
-			<span>&copy; Copyright City of La Grange, TX</span>
-			<span>Powered by <a href="https://www.revize.com/">revize</a>, The Government Website Experts. <a href="./">login</a></span>
-		</section><!-- /#revize-logo -->
-
 		<section id="contact">
+			<span>&copy; Copyright City of La Grange, TX</span>
 			<span>155 E. Colorado St. La Grange, TX 78945</span>
 			<span>979.968.5805</span>
 		</section>
+
+		<section id="revize-logo">
+			<span>Powered by <a href="https://www.revize.com/">revize</a>, The Government Website Experts. <a href="./">login</a></span>
+		</section><!-- /#revize-logo -->
 	</div><!-- /.container -->
 </footer>
 
