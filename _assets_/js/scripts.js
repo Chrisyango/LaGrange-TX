@@ -382,14 +382,10 @@
 				media_min_width: 300,
 				template: "_assets_/templates/template.html",
 				callback: function() {
-					$('.tweet_list > li').addClass('social-feed-element').each(function() {
-						$(this).prependTo($('#social-feed'));
-					});
 					if ($('.tweet_list').length) {
-						let socialCount = $('.social-feed-element').length;
-						const socialItem = function(num) {
-							return (socialCount >= num ? num : socialCount);
-						}
+						$('.tweet_list > li').addClass('social-feed-element').each(function() {
+							$(this).prependTo($('#social-feed'));
+						});
 
 						var owl = $("#social-feed")
 						var fixOwl = function(){
@@ -404,6 +400,7 @@
 									$stage.width( elW );
 							};
 						}
+
 						var randomOwl = function(){
 							owl.children().sort(function(){
 									return Math.round(Math.random()) - 0.5;
@@ -413,15 +410,36 @@
 						};
 
 						owl.owlCarousel({
-							loop: socialCount > 1 ? true : false,
+							loop: false,
 							onInitialize : randomOwl,
 							onInitialized: fixOwl,
 							nav: true,
 							autoWidth: true,
+							onTranslated: function() {
+								if ($('#social-feed .owl-item:first').hasClass('active')) {
+									$('#overlay-before').css('opacity', '0');
+									$('#social-feed .owl-prev').css('opacity', '0');
+									$('#social-feed').css('padding-left', '30px');
+								} else {
+									$('#overlay-before').css('opacity', '1');
+									$('#social-feed .owl-prev').css('opacity', '1');
+									$('#social-feed').css('padding-left', '0');
+								}
+								if ($('#social-feed .owl-item:last').hasClass('active')) {
+									$('#overlay-after').css('opacity', '0');
+									$('#social-feed .owl-next').css('opacity', '0');
+									$('#social-feed').css('padding-right', '30px');
+								} else {
+									$('#overlay-after').css('opacity', '1');
+									$('#social-feed .owl-next').css('opacity', '1');
+									$('#social-feed').css('padding-right', '0');
+								}
+							},
 							navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
 							margin: 30,
 						});
 					}
+					$('#social-feed').prepend('<div id="overlay-before"></div><div id="overlay-after"></div>')
 					$('.social-feed-element').matchHeight({
 						//defaults
 						byRow: true,

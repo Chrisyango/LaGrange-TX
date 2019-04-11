@@ -204,8 +204,7 @@
 				<a href="./" class="fa fa-instagram"></a>
 				<a href="./" class="fa fa-youtube"></a>
 			</div><!-- /.social-links -->
-			<div id="social-feed" class="owl-carousel">
-			</div>
+			<div id="social-feed" class="owl-carousel"></div>
 			<!-- <div id="instafeed"></div> -->
 			<div id="twitter-feed"></div>
 		</section><!-- /#social -->
