@@ -582,6 +582,8 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 	#welcome-bg {height: 300px;}
 
 	/*--------------- #quick-links ---------------*/
+	#quick-links .owl-prev,
+	#quick-links .owl-next {font-size: 24px;}
 	.quick-link h3 {padding: 9px 0;}
 
 	/*--------------- #news ---------------*/
