@@ -377,7 +377,7 @@
 				},
 
 				// General settings
-				length:120,
+				length:100,
 				show_media:true,
 				media_min_width: 300,
 				template: "_assets_/templates/template.html",
