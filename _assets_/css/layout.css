@@ -401,7 +401,7 @@ footer span{position:relative;font-size:14px;line-height:24px;font-weight:600;co
 .btn-google:hover{border-color:#D34836}
 .btn-reddit:hover{border-color:#ff5700}
 .btn-lg{font-size:16px;padding:14px 30px;border:0;border-radius:3px}
-.floating-share-btn{position:fixed;z-index:99998;top:40%;right:0;line-height:1.8;border-radius:0;border:0;background:#5f695f!important;color:#fff!important;padding:10px;box-shadow:0 0 10px rgba(0,0,0,.3);text-align:center}
+.floating-share-btn{position:fixed;z-index:99998;top:40%;right:0;line-height:1.8;border-radius:0;border:0;background:#08685c!important;color:#fff!important;padding:10px;box-shadow:0 0 10px rgba(0,0,0,.3);text-align:center}
 .floating-share-btn span{display:block}
 
 /* -----------------------------------------
