@@ -235,9 +235,9 @@ nav,
 #search-toggle:before{font-family:'FontAwesome';margin-right:3px}
 #search{display:none;position:absolute;top:calc(100% + 15px);right:15px;width:400px}
 #search label{display:none}
-#search input{height:40px;padding:0 70px 0 10px;font-size:14px}
+#search input{height:40px;padding:0 70px 0 10px;font-size:14px;border-radius:8px;border:none}
 #search input::placeholder{font-size:14px}
-#search button{position:absolute;top:0;right:0;width:60px;height:40px;line-height:40px;padding:0;font-size:16px}
+#search button{position:absolute;top:0;right:0;width:60px;height:40px;line-height:40px;padding:0;font-size:16px;border-radius:0 8px 8px 0}
 
 /*--------------- #content ---------------*/
 #content h2{font-family:'GoudyOld';font-size:48px;line-height:68px;color:#08685c;text-transform:capitalize}
