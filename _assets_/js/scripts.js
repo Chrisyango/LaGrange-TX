@@ -224,30 +224,6 @@
 		});
 	}
 
-	// Mega Footer Toggle
-	$('.header-toggle').on('click keydown', function(e) {
-		if (e.keyCode === 13 || e.type === 'click') {
-			var inner = $(this).next('.inner-toggle');
-			if (inner.is(':hidden')) {
-				inner.slideDown('200');
-			} else {
-				inner.slideUp('200');
-			}
-		}
-	});
-
-	// Tabs
-	$('#tabs li a').on('click keypress', function(e) {
-		$('#tabs li, #tabs-content .current').removeClass('current').removeClass('fadeInLeft');
-		$(this).parent().addClass('current');
-
-		var currentTab = $(this).attr('href');
-		
-		e.preventDefault();
-		$(currentTab).addClass('current animated fadeInLeft');
-		$(currentTab).find('h2').focus();
-	})
-
 	// Twitter Feed
 	if(typeof $.fn.tweet !== "undefined"){
 		$("#twitter-feed").tweet({
@@ -264,14 +240,6 @@
 			loading_text: "Loading Tweet..."
 		});
 	}
-
-	// Sticky
-	if(typeof $.fn.sticky !== "undefined"){
-		$("#sticky").sticky({
-			topSpacing:0
-		});
-	}
-
 
 	// bxSlider
 	if(typeof $.fn.bxSlider !== "undefined"){
@@ -570,22 +538,6 @@
 
 		};
 		$('.v-align').flexVerticalCenter();
-
-
-		// Remove matchHeight on document center pages
-		if($('#RZdocument_center').length){
-			$('.aside,.entry').matchHeight({remove:true});
-
-			if(window.matchMedia("(min-width: 992px)").matches){
-				setInterval(function(){
-					if($('.post').outerHeight() + 300 > $('.entry').outerHeight()){
-						$('.aside').css('height',$('.entry').outerHeight() + 'px');
-					}
-				}, 200);
-			}
-		}
-
-
 	}); // Ready
 
 })(jQuery);

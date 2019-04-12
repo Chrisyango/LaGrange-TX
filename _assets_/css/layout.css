@@ -346,6 +346,7 @@ footer span {position: relative; font-size: 14px; line-height: 24px; font-weight
 -----------------------------------------*/
 #freeform main {padding-bottom: 21px; background-color: #f0edd9;}
 #freeform>main>.container {width: 1200px;}
+#freeform.fullwidth #entry {margin-left: 0;}
 
 /*--------------- #slider ---------------*/
 #freeform #slider {position: relative; height: 450px;}
