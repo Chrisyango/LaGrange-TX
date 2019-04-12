@@ -260,12 +260,12 @@ nav,
 #quick-links .owl-prev,
 #quick-links .owl-next{position:absolute;top:50%;left:0;transform:translateY(-100%);font-size:30px}
 #quick-links .owl-next{left:unset;right:0}
-.quick-link{text-decoration:none;text-align:center}
+.quick-link{text-decoration:none;text-align:center;display:block}
 .quick-link-icon{margin:0 auto;width:64px;height:64px}
 .quick-link h3{font-size:18px;line-height:26px;font-weight:600;color:#000;text-transform:uppercase;padding:9px 55px}
 
 /*--------------- #news ---------------*/
-#news{text-align:center;padding-top:47px}
+#news{text-align:center;padding-top:77px}
 #news h2{margin-bottom:34px}
 #news a.btn{width:230px;z-index:1}
 #news-links{position:relative}
@@ -564,14 +564,14 @@ footer span{position:relative;font-size:14px;line-height:24px;font-weight:600;co
 
 	/*--------------- #welcome ---------------*/
 	#welcome{padding:0}
-	#welcome-bg{position:static;width:100%;height:500px}
+	#welcome-bg{position:static;width:100%;height:450px}
 	#welcome-bg-cover{display:none}
 	#welcome p{width:100%}
 
 	/*--------------- #quick-links ---------------*/
 	#quick-links{margin-top:50px}
 	.quick-link-icon{width:55px;height:55px}
-	.quick-link h3{font-size:16px}
+	.quick-link h3{font-size:16px;margin:5px 0}
 
 	/*--------------- #news ---------------*/
 	#news a.btn{width:200px}

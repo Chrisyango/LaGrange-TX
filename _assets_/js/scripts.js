@@ -260,7 +260,6 @@
 			loop: quickLinkCount > 1 ? true : false,
 			responsiveClass: true,
 			nav: true,
-			autoHeight: true,
 			navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
 			margin: 0,
 			responsive: {
@@ -295,12 +294,11 @@
 			loop: newsLinkCount > 1 ? true : false,
 			responsiveClass: true,
 			nav: true,
-			autoHeight: true,
 			navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
 			margin: 70,
 			center: true,
 			startPosition: 1,
-			onInitialized: function() {
+			onInitialize: function() {
 				$('#news-links > .owl-height').height($('#news-links > .owl-height').outerHeight() + 60);
 				$('#news-links').find('.news-link').each(function () {
 					$(this).css('margin-bottom', '60px');
@@ -424,6 +422,13 @@
 		// matchHeight
 		if(typeof $.fn.matchHeight !== "undefined"){
 			$('.news-link').matchHeight({
+				//defaults
+				byRow: true,
+				property: 'height', // height or min-height
+				target: null,
+				remove: false
+			});
+			$('.quick-link').matchHeight({
 				//defaults
 				byRow: true,
 				property: 'height', // height or min-height
