@@ -209,7 +209,7 @@ body:after{content:'';position:absolute;top:0;bottom:0;left:0;right:0;background
 .text-overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #calendarEvent{left:0px;max-height:500px;overflow-y:auto;margin:0 auto}
 #skip{position:fixed;top:150px;left:-100%;-webkit-transition:all .3s ease-in;transition:all .3s ease-in;z-index:100}
-#skip:focus{left:15px;text-decoration:none;color:#fff;background-color:#c85530;padding:10px 20px}
+#skip:focus{left:15px;text-decoration:none;color:#fff;background-color:#08685c;padding:10px 20px}
 
 
 /*--------------- #nav ---------------*/
@@ -231,7 +231,7 @@ nav,
 .forecast{font-size:11px;line-height:68px;font-weight:600;color:#08685c}
 .weather i{font-size:20px;margin-right:5px}
 
-#search-toggle{position:relative;top:-1px;font-family:'MontSerrat';font-size:11px;font-weight:700;color:#08685c;text-transform:uppercase}
+#search-toggle{position:relative;top:-1px;font-family:'MontSerrat';font-size:11px;font-weight:700;color:#08685c;text-transform:uppercase;cursor:pointer}
 #search-toggle:before{font-family:'FontAwesome';margin-right:3px}
 #search{display:none;position:absolute;top:calc(100% + 15px);right:15px;width:400px}
 #search label{display:none}
