@@ -405,7 +405,17 @@
 							},
 							navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
 							margin: 30,
-							items: 1
+							responsive: {
+								0: {
+									items: 1
+								},
+								992: {
+									items: 2
+								},
+								1440: {
+									items: 3
+								}
+							}
 						});
 					}
 					$('.social-feed-element').matchHeight({
