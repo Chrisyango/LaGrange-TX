@@ -366,7 +366,7 @@
 									$stage.width( elW );
 							};
 							$('#social-feed .social-img-container img').css('display', 'block');
-							$('#social-feed').prepend('<div id="overlay-before"></div><div id="overlay-after"></div>')
+							$('#social-feed').prepend('<div id="overlay-before"></div><div id="overlay-after"></div>');
 						}
 
 						var randomOwl = function(){

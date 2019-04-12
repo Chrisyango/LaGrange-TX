@@ -85,7 +85,7 @@
 
 		<div class="weather hidden-sm hidden-xs">
 			<div id="weather"></div><!-- /#weather -->
-		</div><!-- /.weather -->	
+		</div><!-- /.weather -->
 
 		<div id="search-toggle" class="fa fa-search hidden-sm hidden-xs" tabindex="0">search</div>
 		<div id="search">
