@@ -236,7 +236,7 @@
 			auto_join_text_ed: "",
 			auto_join_text_ing: "",
 			auto_join_text_reply: "",
-			auto_join_text_url: "",
+			auto_join_text_url: "<i class='fa fa-twitter'></i>",
 			loading_text: "Loading Tweet..."
 		});
 	}
@@ -345,7 +345,7 @@
 				},
 
 				// General settings
-				length:100,
+				length:80,
 				show_media:true,
 				media_min_width: 300,
 				template: "_assets_/templates/template.html",
@@ -367,6 +367,8 @@
 								if ( elW > stageW ) {
 									$stage.width( elW );
 							};
+							$('#social-feed .social-img-container img').css('display', 'block');
+							$('#social-feed').prepend('<div id="overlay-before"></div><div id="overlay-after"></div>')
 						}
 
 						var randomOwl = function(){
@@ -405,9 +407,9 @@
 							},
 							navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
 							margin: 30,
+							items: 1
 						});
 					}
-					$('#social-feed').prepend('<div id="overlay-before"></div><div id="overlay-after"></div>')
 					$('.social-feed-element').matchHeight({
 						//defaults
 						byRow: true,
