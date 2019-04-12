@@ -526,7 +526,7 @@ footer span{position:relative;font-size:14px;line-height:24px;font-weight:600;co
 	.toggle,
 	.toggle2,
 	#search-toggle-mobile,
-	#nav-toggle{display:inline-block;cursor:pointer;height:45px;width:45px;line-height:45px;text-align:center}
+	#nav-toggle{display:inline-block;cursor:pointer;height:45px;width:45px;line-height:45px;text-align:center;font-size:20px}
 	.down-arrow{display:none} /* if not hidden above */
 	nav{display:block;margin:15px 0;text-align:left}
 	#nav{display:none;margin:0;background-color:#08685c}
@@ -669,11 +669,14 @@ footer span{position:relative;font-size:14px;line-height:24px;font-weight:600;co
 	/*--------------- #nav ---------------*/
 	#nav li a,
 	#nav li span{font-size:12px}
+	#nav .toggle,
+	#nav .toggle2{height:42px;width:42px;line-height:42px}
 
 	/*--------------- #flyout ---------------*/
 	#flyout-toggle,
 	#flyout li a,
 	#flyout li span{font-size:13px}
+	#flyout .toggle{height:43px;width:43px;line-height:43px}
 
 	/*--------------- #content ---------------*/
 	#content h2{font-size:36px;line-height:50px}
