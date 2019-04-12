@@ -233,9 +233,10 @@ nav,
 
 #search-toggle{position:relative;top:-1px;font-family:'MontSerrat';font-size:11px;font-weight:700;color:#08685c;text-transform:uppercase}
 #search-toggle:before{font-family:'FontAwesome';margin-right:3px}
-#search{display:none;position:absolute;top:calc(100% + 15px);right:15px;width:300px}
+#search{display:none;position:absolute;top:calc(100% + 15px);right:15px;width:400px}
 #search label{display:none}
-#search input{height:40px;padding:0 70px 0 10px}
+#search input{height:40px;padding:0 70px 0 10px;font-size:14px}
+#search input::placeholder{font-size:14px}
 #search button{position:absolute;top:0;right:0;width:60px;height:40px;line-height:40px;padding:0;font-size:16px}
 
 /*--------------- #content ---------------*/
@@ -541,6 +542,9 @@ footer span{position:relative;font-size:14px;line-height:24px;font-weight:600;co
 	#nav .toggle,
 	#nav .toggle2,
 	#flyout .toggle{position:absolute;right:0;top:0;background:rgba(0,0,0,.2)}
+
+	#search input{font-size:12px}
+	#search input::placeholder{font-size:12px}
 
 	/*--------------- #flyout ---------------*/
 	#side-content{margin-top:30px}
