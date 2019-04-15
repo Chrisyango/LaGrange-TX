@@ -248,6 +248,12 @@
 			auto:($('.bxslider').children().length < 2) ? false : true,
 			pager: false
 		});
+
+		
+		if($('#homepage').length) {
+			// Add cover for each slide
+			$('.bxslider li>div').append('<div id="welcome-bg-cover" style="background:url(./_assets_/images/welcome-bg-cover.png) center no-repeat;background-size:cover;"></div>')
+		}
 	}
 
 	// Owl Slider

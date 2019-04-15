@@ -98,12 +98,15 @@
 	</div><!-- /.container -->
 </header><!-- /.clearfix -->
 
+<section id="slider">
+	<ul class="bxslider">
+		<li><div class="welcome-bg" style="background:url('./_assets_/images/welcome-bg.jpg') center no-repeat;background-size:cover;"></div></li>
+	</ul><!-- /.bxslider -->
+</section><!-- /#slider -->
+
 <main id="main">
 	<section id="content">
 		<section id="welcome">
-			<div id="welcome-bg" style="background:url('./_assets_/images/welcome-bg.jpg') center no-repeat;background-size:cover;">
-				<div id="welcome-bg-cover" style="background:url(./_assets_/images/welcome-bg-cover.png) center no-repeat;background-size:cover;"></div>
-			</div><!-- /#welcome-bg -->
 			<div id="welcome-info" class="container">
 				<h1><span>welcome to</span>la grange</h1>
 				<div id="welcome-img" style="background:url('./_assets_/images/welcome.png') center no-repeat;background-size:cover;"></div>
@@ -296,6 +299,7 @@
 <script src="_assets_/plugins/social-feed/js/jquery.socialfeed.js"></script>
 <script src="_assets_/plugins/modernizr/modernizr.custom.js"></script>
 <script src="_assets_/plugins/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+<script src="_assets_/plugins/jquery.bxslider/jquery.bxslider.min.js"></script>
 <script src="_assets_/plugins/bootstrap/js/bootstrap.min.js"></script>
 <script src="_assets_/plugins/twitter/js/jquery.tweet.min.js"></script>
 <script src="_assets_/plugins/matchHeight/dist/jquery.matchHeight-min.js"></script>
